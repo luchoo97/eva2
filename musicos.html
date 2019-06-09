@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>:::MUSICOS:::</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+    <script src="musico.js"></script>
+    
+    
+
+
+</head>
+<nav>
+    <div class="nav-wrapper green darken-4">
+        <a href="#!" class="brand-logo"><i class="material-icons">music_note</i>MUSICA MP3 CON TODO EL FLOW XD</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="musicos.html">MUSICA</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+        </ul>
+    </div>
+</nav>
+
+<body>
+        <div class="container">
+    <div class="container">
+        <div class="row">
+            <input type="text" name="musico" id="musico" required placeholder="Musico">
+            <input type="text" name="titulo" id="titulo" required placeholder="Titulo de la canción">
+            <input type="text" name="genero" id="genero" required placeholder="Genero de la canción">
+            <input type="number" name="año" id="año" required placeholder="Año de la canción">
+            <button class="btn waves-effect waves-light" id="boton" onclick="agregarDatos()"> <i
+                    class="material-icons">add_circle</i>AGREGAR</button>
+            <button class="btn waves-effect waves-light" type="reset" value="Limpiar">Limpiar</button>
+            
+
+        </div>
+    </div>
+    <div class="table my-3">
+        <div class="col s12">
+            <table class="centered highlight">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Musico</th>
+                        <th>Titulo</th>
+                        <th>Genero</th>
+                        <th>Año</th>
+                        <th>Borrar</th>
+                        <th>Editar</th>
+                        
+                        
+                    </tr>
+                </thead>
+                <tbody id="tabla" >
+                       
+                        
+                        
+            </tbody>
+            </table>
+        </div>
+    </div>
+   
+
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+<footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">MUSICA</h5>
+              <p class="grey-text text-lighten-4">trabajo eva2 bla bla bla</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+               
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2019 Héctor Navarro & Luis Sánchez
+          <a class="grey-text text-lighten-4 right" href="www.ipchile.cl">IPCHILE</a>
+          </div>
+        </div>
+      </footer>
+
+</html>
