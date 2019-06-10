@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <link href="https//fonst.gooogleapis.com/css?famil=Roboto:300,508" rel="stylesheet">
+
+
+
+
+
+    <title>::INICIO SESION::</title>
+</head>
+<nav>
+    <div class="nav-wrapper green darken-4">
+        <a href="#!" class="brand-logo"><i class="material-icons">music_note</i>MUSICA MP3 H&L</a>
+        
+    </div>
+</nav>
+
+<body>
+        <div class="vc_row element-row row vc_custom_1478727859541">
+                <div class="wpb_column vc_column_container vc_col-sm-12">
+                <div class="wpb_wrapper">
+                <div class="fw-section hb-fw-599b22a654ae9 without-border no-overlay light-style"
+                style="background-color:#000000;
+                 background-image:url(https://www.litmos.com/wp-content/uploads/2017/04/learning-automation-lms-training.jpg);
+                 background-size:cover;
+                 padding-top:40px;
+                 padding-bottom:100px;">
+                <div class="row fw-content-wrap">
+                <div class="col-12 nbm">
+                <div id="learning-automated-div" style="text-align: center; font-size: 48px;
+                 line-height: 52px; padding: 100px 5px 10px 5px;">
+                <span style="color:#FFFFFF;">BIENVENIDO<BR>
+                     PARA ENTRAR A LA PAGINA, PRIMERO DEBES INICIAR SESIÓN</span></div>
+                <div style="text-align: center; font-size: 18px; line-height: 22px; padding: 0 5px 40px 5px;">
+                <span style="color:#FFFFFF;"></span></div>
+                <div style="text-align: center;">
+                <table border="0" cellpadding="1" cellspacing="1" style="width:100%;">
+                 <tbody>
+                 <tr>
+                 <td><center>
+                     <
+                    <div class="container">
+                        <button style="width: 200px; height: 120px"  class="btn waves-effect waves-light" onclick="ingresarGoogle()"><img src="imagenes/google.png" width="100" height="100" border="0"></a></button>
+                    </div>
+                 
+                 </tr>
+                 </tbody>
+                </table>
+                </div>
+                </div>
+                </div>
+                <div class="video-overlay no-overlay">$nbsp;</div></div>
+                </div></div></div>
+
+
+
+
+            <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-messaging.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-functions.js"></script>
+
+            <script>
+                var firebaseConfig = {
+                    apiKey: "AIzaSyBVz6AtYXwQ-mgyYdKlHeG_rb34GMkylCw",
+                    authDomain: "eva2-c4a90.firebaseapp.com",
+                    databaseURL: "https://eva2-c4a90.firebaseio.com",
+                    projectId: "eva2-c4a90",
+                    storageBucket: "eva2-c4a90.appspot.com",
+                    messagingSenderId: "3509952268",
+                    appId: "1:3509952268:web:313efce17c920dea"
+                };
+                firebase.initializeApp(firebaseConfig);
+
+                ingresarGoogle = () => {
+                    var provider = new firebase.auth.GoogleAuthProvider();
+                    firebase.auth().signInWithPopup(provider).then(function (result) {
+                        location.href = "index.html"
+
+                    }).catch(function (err) {
+
+                        alert("error al autentificar tus credenciales.");
+                        console.log(err);
+                    })
+                }
+            </script>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
