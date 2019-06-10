@@ -51,7 +51,7 @@
                  <td><center>
                      <
                     <div class="container">
-                        <button style="width: 200px; height: 120px"  class="btn waves-effect waves-light" onclick="ingresarGoogle()"><img src="imagenes/google.png" width="100" height="100" border="0"></a></button>
+                        <button style="width: 200px; height: 120px"  class="btn waves-effect waves-light" onclick="ingresarGoogle()"><img src="https://firebasestorage.googleapis.com/v0/b/eva2-c4a90.appspot.com/o/google.png?alt=media&token=b11e79fc-5100-449d-820c-7c125012a0f1" width="100" height="100" border="0"></a></button>
                     </div>
                  
                  </tr>
@@ -88,7 +88,7 @@
                 ingresarGoogle = () => {
                     var provider = new firebase.auth.GoogleAuthProvider();
                     firebase.auth().signInWithPopup(provider).then(function (result) {
-                        location.href = "index.html"
+                        location.href = "menu.html"
 
                     }).catch(function (err) {
 
